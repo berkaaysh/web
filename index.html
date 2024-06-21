@@ -8,53 +8,59 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-wsGekyZFuIP6oKG8XYp1xRgH3N0t8fvnCekGCVVLf1B1lzJQ26uQQZa4r47yoGdMKUGFOA2PIcaK4lZ1abgI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <div class="container">
-        <div class="login-box">
-            <h1>Welcome to WebbingBeko</h1>
-            <form action="#">
-                <div class="input-container">
-                    <i class="fas fa-user"></i>
-                    <input type="text" placeholder="Kullanıcı Adı" required>
+    <div class="background">
+        <div class="container">
+            <div class="content">
+                <h1>Welcome to WebbingBeko</h1>
+                <p class="subtitle">Explore the digital world with us.</p>
+                <div class="login-box">
+                    <form action="#">
+                        <div class="input-container">
+                            <i class="fas fa-user"></i>
+                            <input type="text" placeholder="Kullanıcı Adı" required>
+                        </div>
+                        <div class="input-container">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" placeholder="Şifre" required>
+                        </div>
+                        <button type="submit">Giriş Yap</button>
+                    </form>
+                    <p>Hesabınız yok mu? <a href="javascript:void(0);" onclick="openRegister()">Kaydolun</a></p>
                 </div>
-                <div class="input-container">
-                    <i class="fas fa-lock"></i>
-                    <input type="password" placeholder="Şifre" required>
+                <div id="registerBox" class="register-box">
+                    <h2>Kayıt Ol</h2>
+                    <form action="#">
+                        <div class="input-container">
+                            <i class="fas fa-user"></i>
+                            <input type="text" placeholder="Kullanıcı Adı" required>
+                        </div>
+                        <div class="input-container">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" placeholder="Şifre" required>
+                        </div>
+                        <div class="input-container">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" placeholder="Şifre Tekrarı" required>
+                        </div>
+                        <div class="input-container">
+                            <i class="fas fa-envelope"></i>
+                            <input type="email" placeholder="E-posta" required>
+                        </div>
+                        <div class="captcha">
+                            <input type="checkbox" id="human" required>
+                            <label for="human">Ben robot değilim</label>
+                        </div>
+                        <button type="submit">Kayıt Ol</button>
+                    </form>
+                    <p>Zaten hesabınız var mı? <a href="#">Giriş Yapın</a></p>
                 </div>
-                <button type="submit">Giriş Yap</button>
-            </form>
-            <p>Hesabınız yok mu? <a href="javascript:void(0);" onclick="openRegister()">Kaydolun</a></p>
-        </div>
-        <div id="registerBox" class="register-box">
-            <h1>Kayıt Ol</h1>
-            <form action="#">
-                <div class="input-container">
-                    <i class="fas fa-user"></i>
-                    <input type="text" placeholder="Kullanıcı Adı" required>
-                </div>
-                <div class="input-container">
-                    <i class="fas fa-lock"></i>
-                    <input type="password" placeholder="Şifre" required>
-                </div>
-                <div class="input-container">
-                    <i class="fas fa-lock"></i>
-                    <input type="password" placeholder="Şifre Tekrarı" required>
-                </div>
-                <div class="input-container">
-                    <i class="fas fa-envelope"></i>
-                    <input type="email" placeholder="E-posta" required>
-                </div>
-                <div class="captcha">
-                    <input type="checkbox" id="human" required>
-                    <label for="human">Ben robot değilim</label>
-                </div>
-                <button type="submit">Kayıt Ol</button>
-            </form>
-            <p>Zaten hesabınız var mı? <a href="#">Giriş Yapın</a></p>
-        </div>
-        <div class="footer">
-            <p>© 2024 WebbingBeko. Tüm hakları saklıdır.</p>
+            </div>
         </div>
     </div>
+
+    <footer class="footer">
+        <p>© 2024 WebbingBeko. Tüm hakları saklıdır.</p>
+    </footer>
 
     <script>
         function openRegister() {
