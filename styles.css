@@ -41,12 +41,14 @@ h1 {
     margin-bottom: 10px;
     text-transform: uppercase;
     letter-spacing: 2px;
+    animation: fadeIn 1s ease;
 }
 
 .subtitle {
     font-size: 24px;
     color: #666;
     margin-bottom: 30px;
+    animation: fadeIn 2s ease;
 }
 
 .login-box, .register-box {
@@ -56,6 +58,11 @@ h1 {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     text-align: center;
     margin-top: 20px;
+    display: none;
+}
+
+.login-box {
+    display: block;
 }
 
 form .input-container {
@@ -77,6 +84,7 @@ form input {
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 16px;
+    padding-left: 40px;
 }
 
 form button {
@@ -89,7 +97,11 @@ form button {
     font-size: 18px;
     text-transform: uppercase;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+form button:active {
+    transform: scale(0.95);
 }
 
 form button:hover {
@@ -121,4 +133,13 @@ p a:hover {
     padding: 10px 0;
     font-size: 14px;
     z-index: 2;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
