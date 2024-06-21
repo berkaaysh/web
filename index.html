@@ -11,7 +11,7 @@
     <div class="background">
         <div class="container">
             <div class="content">
-                <h1>Welcome to WebbingBeko</h1>
+                <h1>WebbingBeko</h1>
                 <p class="subtitle">Explore the digital world with us.</p>
                 <div class="login-box">
                     <form action="#">
@@ -23,7 +23,7 @@
                             <i class="fas fa-lock"></i>
                             <input type="password" placeholder="Şifre" required>
                         </div>
-                        <button type="submit">Giriş Yap</button>
+                        <button type="submit" class="btn">Giriş Yap</button>
                     </form>
                     <p>Hesabınız yok mu? <a href="javascript:void(0);" onclick="openRegister()">Kaydolun</a></p>
                 </div>
@@ -50,9 +50,9 @@
                             <input type="checkbox" id="human" required>
                             <label for="human">Ben robot değilim</label>
                         </div>
-                        <button type="submit">Kayıt Ol</button>
+                        <button type="submit" class="btn">Kayıt Ol</button>
                     </form>
-                    <p>Zaten hesabınız var mı? <a href="#">Giriş Yapın</a></p>
+                    <p>Zaten hesabınız var mı? <a href="javascript:void(0);" onclick="closeRegister()">Giriş Yapın</a></p>
                 </div>
             </div>
         </div>
@@ -66,6 +66,11 @@
         function openRegister() {
             document.getElementById("registerBox").style.display = "block";
             document.getElementsByClassName("login-box")[0].style.display = "none";
+        }
+
+        function closeRegister() {
+            document.getElementById("registerBox").style.display = "none";
+            document.getElementsByClassName("login-box")[0].style.display = "block";
         }
     </script>
 </body>
