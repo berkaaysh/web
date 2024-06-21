@@ -21,7 +21,7 @@ body, html {
 
 .container {
     width: 100%;
-    max-width: 600px;
+    max-width: 500px;
     padding: 20px;
     box-sizing: border-box;
     text-align: center;
@@ -30,30 +30,23 @@ body, html {
 
 .content {
     background-color: rgba(255, 255, 255, 0.9);
-    padding: 30px;
+    padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
-    font-size: 48px;
+    font-size: 36px;
     color: #333;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     text-transform: uppercase;
     letter-spacing: 2px;
     animation: fadeIn 1s ease;
 }
 
-.subtitle {
-    font-size: 24px;
-    color: #666;
-    margin-bottom: 30px;
-    animation: fadeIn 2s ease;
-}
-
 .login-box, .register-box {
     background-color: #fff;
-    padding: 30px;
+    padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -100,16 +93,16 @@ form button {
     transition: background-color 0.3s ease, transform 0.1s ease;
 }
 
-form button:active {
-    transform: scale(0.95);
-}
-
 form button:hover {
     background-color: #2980b9;
 }
 
+form button:active {
+    transform: scale(0.95);
+}
+
 p {
-    font-size: 18px;
+    font-size: 16px;
     color: #333;
 }
 
